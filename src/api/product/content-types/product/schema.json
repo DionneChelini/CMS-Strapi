@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "availability": {
+      "type": "enumeration",
+      "enum": [
+        "sold",
+        "in stock",
+        "pre-order",
+        "on hold"
+      ],
+      "required": true
+    },
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "brand": {
+      "type": "enumeration",
+      "enum": [
+        "Audemars piguet",
+        "Patek philippe",
+        "Richard mille",
+        "Rolex",
+        "Blancpain",
+        "Bvlgari",
+        "Cartier",
+        "Chanel",
+        "Chopard",
+        "Dietrich",
+        "Franck muller",
+        "Girard perregaux",
+        "Glashutte",
+        "Gucci",
+        "Hermes",
+        "Hublot",
+        "Iwc",
+        "Jaeger lecoultre",
+        "Longines",
+        "Montblanc",
+        "Omega",
+        "Panerai",
+        "Piaget",
+        "Roger dubuis",
+        "Tagheuer",
+        "Tudor",
+        "Vacheron constantin",
+        "Vancleef",
+        "Zenith",
+        "Other"
+      ],
+      "required": true
+    },
+    "model": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "displayName": "details",
+      "type": "component",
+      "repeatable": true,
+      "component": "features.details",
+      "required": true
+    },
+    "subcategory": {
+      "type": "enumeration",
+      "enum": [
+        "Daytona",
+        "Submariner",
+        "GMT Master",
+        "Datejust",
+        "Daydate",
+        "Oyster Perpectual",
+        "Sea Dweller",
+        "Sky Dweller",
+        "Yacht Master",
+        "Royal Oak",
+        "Royal Oak Offshore",
+        "Royal Oak Concept",
+        "Code 11.59",
+        "Grand Complications",
+        "Nautilus",
+        "Aquanaut",
+        "Complications",
+        "Calatrava",
+        "Tourbillon",
+        "Men ",
+        "Ladies",
+        "Others"
+      ],
+      "required": true
+    }
+  }
+}
