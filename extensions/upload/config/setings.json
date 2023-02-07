@@ -1,0 +1,12 @@
+{
+    "provider": "aws-s3", 
+    "providerOptions": {
+        "accessKeyId": "AKIAUI3CRU7XHJ7I4E4Q",
+        "secretAccessKey": "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",
+        "region": "us-east-1",
+        "params": {
+            "Bucket": "strapi342134"
+        }
+
+    }
+}
