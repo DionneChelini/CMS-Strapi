@@ -116,6 +116,9 @@
         "Others"
       ],
       "required": true
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }
