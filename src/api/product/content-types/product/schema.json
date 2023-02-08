@@ -79,7 +79,8 @@
     },
     "model": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "details": {
       "displayName": "details",
